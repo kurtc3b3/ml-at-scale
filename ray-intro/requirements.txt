@@ -1,0 +1,14 @@
+# Deep learning on Apple Silicon GPU via MPS (torch1-torch3.py)
+torch==2.8.0
+torchvision==0.23.0
+
+# Distributed compute / parallel tasks & actors (ray1-ray3.py)
+# Hyperparameter tuning (ray4.py) — Ray Tune extra
+ray[tune]==2.51.2
+
+# Optuna search backend for Ray Tune
+optuna==4.9.0
+
+# Classic ML: dataset, RandomForest, cross-validation (ray3.py, ray4.py)
+scikit-learn==1.6.1
+numpy>=2.1,<2.3
