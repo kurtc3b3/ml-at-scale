@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+/pytorch-intro/data
+*.pt
+.DS_Store

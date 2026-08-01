@@ -1,0 +1,41 @@
+[project]
+name = "celery-intro"
+version = "0.1.0"
+description = "FastAPI + Celery + Redis task queue intro"
+readme = "README.md"
+authors = [
+    { name = "mekanizeai", email = "mekanizeai@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "bandit>=1.9.4",
+    "bs4>=0.0.2",
+    "celery>=5.6.3",
+    "click>=8.4.2",
+    "fastapi>=0.140.0",
+    "fastapi-users>=15.0.5",
+    "flower>=2.0.1",
+    "httpx>=0.28.1",
+    "isort>=8.0.1",
+    "locust>=2.46.2",
+    "prek>=0.4.11",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.2",
+    "pytest>=9.1.1",
+    "ray>=2.56.1",
+    "redis>=8.0.1",
+    "rich>=15.0.0",
+    "ruff>=0.16.0",
+    "slowapi>=0.1.10",
+    "structlog>=26.1.0",
+    "ty>=0.0.63",
+    "uvicorn>=0.51.0",
+]
+
+[project.scripts]
+celery-intro = "celery_intro:main"
+celery-loadtest = "celery_intro.scripts.loadtest:cli"
+
+[build-system]
+requires = ["uv_build>=0.8.23,<0.9.0"]
+build-backend = "uv_build"
